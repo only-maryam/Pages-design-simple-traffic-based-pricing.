@@ -1,0 +1,245 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background: hsl(230 100% 99%) url("imagebox/my drop white.jpg") no-repeat; */
+    background-color: whitesmoke;
+    background-attachment: fixed;
+    background-position: top;
+    font-family: monospace, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.mainhead {
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.subhead {
+    font-size: 15px;
+    color: hsl(225, 20%, 60%);
+    margin-top: 15px;
+}
+
+.card {
+    background-color: white;
+    height: 390px;
+    width: 545px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.partone {
+    width: 445px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.pageview {
+    font-size: 15px;
+    color: hs1(225, 20%, 60%);
+    font-weight: 800px;
+    letter-spacing: 1px;
+}
+
+.pricemonth {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.month {
+    margin-left: 2px;
+    color: hsl(225, 20%, 60%);
+}
+
+.parttwo {
+    width: 445px;
+    margin-top: 30px;
+}
+
+.progessbar {
+    position: relative;
+    height: 20px;
+}
+
+.progessbar input[type="range"] {
+    width: 100%;
+}
+
+.myrange {
+    appearance: none;
+    background: linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%)50%, hsl(224, 65%, 95%)0%, hsl(224, 65%, 95%)100%);
+    height: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.partthree {
+    width: 445px;
+    display: flex;
+    text-align: center;
+    justify-content: flex-end;
+    margin-top: 45px;
+    /* border: 1px solid black; */
+}
+
+.partthree p {
+    color: hsl(225, 20%, 60%);
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.monthly {
+    margin-right: 16px;
+}
+
+.yearly {
+    margin-right: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    margin-right: 12px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: hsl(225, 20%, 60%);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 4.5px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background-color: hsl(174, 86%, 45%);
+
+}
+
+input:focus+.slider {
+    background-color: hsl(174, 86%, 45%);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.discount {
+    background-color: hsl(14, 92%, 95%);
+    color: hsl(15, 100%, 70%);
+    font-size: 10px;
+    margin-right: 20px;
+    width: 75px;
+    text-align: center;
+    border-radius: 15px;
+    /* padding: 3px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discountnumber {
+    margin-right: 13px;
+}
+
+.partfour {
+    border-top: 2px solid hsl(224, 65%, 95%);
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkone,
+.checkTwo,
+.checkThree {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.checkone img,
+.checkTwo img,
+.checkThree img {
+    margin-right: 17px;
+    width: 17px;
+    height: 17px;
+}
+
+.button {
+    width: 140px;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: hsl(227, 35%, 25%);
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    float: left;
+    align-items: center;
+}
